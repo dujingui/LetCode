@@ -3,9 +3,16 @@
 
 #include "pch.h"
 #include <iostream>
+#include "Code_274.h"
+
+#include <vector>
+
+using namespace std;
 
 int main()
 {
+	vector<int> a = { 0 };
+	hIndex(a);
     std::cout << "Hello World!\n"; 
 }
 

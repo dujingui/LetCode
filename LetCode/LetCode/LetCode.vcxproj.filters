@@ -18,6 +18,36 @@
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Code_1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_66.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_1222.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LCP_Code_1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_167.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_863.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_274.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">

@@ -39,8 +39,64 @@ struct TreeNode {
     TreeNode *right;
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
- 
 
 vector<int> distanceK(TreeNode* root, TreeNode* target, int K) {
+	vector<int> ret;
 
+	map<TreeNode*, TreeNode*> map;
+
+	set<TreeNode*> set;
+
+	bl(map, root);
+
+	bl2(ret, map, target, set, K);
+
+	return ret;
+}
+
+void bl(map<TreeNode*, TreeNode*>& map, TreeNode* node)
+{
+	if (!node)
+	{
+		return;
+	}
+
+	if (node->left)
+	{
+		map[node->left] = node;
+	}
+	if (node->right)
+	{
+		map[node->right] = node;
+	}
+
+	bl(map, node->left);
+	bl(map, node->right);
+}
+
+void bl2(vector<int>& ret, map<TreeNode*, TreeNode*>& map, TreeNode* node, set<TreeNode*>& set, int k)
+{
+	if (!node)
+	{
+		return;
+	}
+
+	if (set.find(node) != set.end())
+	{
+		return;
+	}
+
+	if (k == 0)
+	{
+		ret.push_back(node->val);
+		return;
+	}
+
+	set.insert(node);
+
+	bl2(ret, map, map[node], set, k - 1);
+	bl2(ret, map, node->left, set, k - 1);
+	bl2(ret, map, node->right, set, k - 1);
+
+	set.erase(node);
 }
