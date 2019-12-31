@@ -17,7 +17,7 @@ using namespace std;
 
 int main()
 {
-	//getMoneyAmount(10);
+	getMoneyAmount(10);
 
     //std::cout << "Hello World!\n"; 
 	return 1;

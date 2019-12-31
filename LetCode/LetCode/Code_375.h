@@ -46,21 +46,21 @@
 //链接：https ://leetcode-cn.com/problems/guess-number-higher-or-lower-ii/solution/cai-shu-zi-da-xiao-ii-by-leetcode/
 //来源：力扣（LeetCode）
 //著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处
-//
-//int calc(int low, int high) {
-//	if (low >= high)
-//		return 0;
-//
-//	int ret = 0;
-//
-//	for (int i = low; i <= high; i++)
-//	{
-//		ret = i + max(calc(low + 1, high), calc(low, high - 1));
-//	}
-//
-//	return ret;
-//}
-//
-//int getMoneyAmount(int n) {
-//	return calc(1, n);
-//}
+
+int calc(int low, int high) {
+	if (low >= high)
+		return 0;
+
+	int ret = 0;
+
+	for (int i = low; i <= high; i++)
+	{
+		ret = i + max(calc(low + 1, high), calc(low, high - 1));
+	}
+
+	return ret;
+}
+
+int getMoneyAmount(int n) {
+	return calc(1, n);
+}

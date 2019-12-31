@@ -48,6 +48,30 @@
     <ClInclude Include="Code_274.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Code_921.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_62.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_86.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_375.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_492.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_516.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_693.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_747.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
