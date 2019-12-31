@@ -30,10 +30,44 @@
 int longestPalindromeSubseq(string s) {
 	int i = 0, j = s.length() - 1;
 
-	while (true) {
-		if (i >= j)
-		{
-			break;
-		}
-	}
+	//while (true) {
+	//	if (i >= j)
+	//	{
+	//		break;
+	//	}
+
+	//	if([])
+	//}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int b()
+{
+	int a = 5;
+	int b = 8;
+
+	return a + b;
 }
