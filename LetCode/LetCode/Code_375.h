@@ -47,18 +47,20 @@
 //来源：力扣（LeetCode）
 //著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处
 
+//TODO:
 int calc(int low, int high) {
 	if (low >= high)
 		return 0;
 
-	int ret = 0;
+	int minres = INT32_MAX;
 
 	for (int i = low; i <= high; i++)
 	{
-		ret = i + max(calc(low + 1, high), calc(low, high - 1));
+		int res = i + max(calc(i + 1, high), calc(low, i - 1));
+		minres = min(res, minres);
 	}
 
-	return ret;
+	return minres;
 }
 
 int getMoneyAmount(int n) {

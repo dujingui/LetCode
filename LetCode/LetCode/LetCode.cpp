@@ -12,12 +12,16 @@
 #include "Code_492.h"
 #include "Code_693.h"
 #include "Code_375.h"
+#include "Code_345.h"
+#include "Code_101.h"
 
 using namespace std;
 
 int main()
 {
-	getMoneyAmount(10);
+	std::vector<int> vec = { 1,2,2,NULL,3,3,NULL, NULL, NULL,4,5,5,4 };
+	TreeNode* root = ConvertToTreeNode(vec, 0);
+	cout << isSymmetric(root) << endl;
 
     //std::cout << "Hello World!\n"; 
 	return 1;

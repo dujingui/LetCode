@@ -152,11 +152,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Code_1.h" />
+    <ClInclude Include="Code_101.h" />
     <ClInclude Include="Code_1222.h" />
     <ClInclude Include="Code_167.h" />
     <ClInclude Include="Code_2.h" />
     <ClInclude Include="Code_274.h" />
     <ClInclude Include="Code_3.h" />
+    <ClInclude Include="Code_345.h" />
     <ClInclude Include="Code_375.h" />
     <ClInclude Include="Code_492.h" />
     <ClInclude Include="Code_516.h" />

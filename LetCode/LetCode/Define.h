@@ -41,6 +41,22 @@ ListNode* ConvertToListNode(vector<int>& vec)
 	return pTemp;
 }
 
+TreeNode* ConvertToTreeNode(vector<int>& vec, int i)
+{
+	TreeNode* pNode = nullptr;
+
+	if (i >= vec.size() || vec[i] == NULL)
+	{
+		return pNode;
+	}
+
+	pNode = new TreeNode(vec[i]);
+	pNode->left = ConvertToTreeNode(vec, 2 * i + 1);
+	pNode->right = ConvertToTreeNode(vec, 2 * i + 2);
+
+	return pNode;
+}
+
 void PrintVector(vector<int>& vec)
 {
 	for (int i = 0; i < vec.size(); i++)
