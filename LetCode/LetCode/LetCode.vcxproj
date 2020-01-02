@@ -172,6 +172,7 @@
     <ClInclude Include="Define.h" />
     <ClInclude Include="LCP_Code_1.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="QuickSort.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LetCode.cpp" />
