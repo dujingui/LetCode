@@ -81,12 +81,42 @@
     <ClInclude Include="QuickSort.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Code_300.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_1021.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_1047.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_682.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_496.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_232.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_1046.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BinarySearchTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="LetCode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BinarySearchTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Define.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

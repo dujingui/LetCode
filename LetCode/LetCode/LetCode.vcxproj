@@ -151,19 +151,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BinarySearchTree.h" />
     <ClInclude Include="Code_1.h" />
     <ClInclude Include="Code_101.h" />
+    <ClInclude Include="Code_1021.h" />
+    <ClInclude Include="Code_1046.h" />
+    <ClInclude Include="Code_1047.h" />
     <ClInclude Include="Code_1222.h" />
     <ClInclude Include="Code_167.h" />
     <ClInclude Include="Code_2.h" />
+    <ClInclude Include="Code_232.h" />
     <ClInclude Include="Code_274.h" />
     <ClInclude Include="Code_3.h" />
+    <ClInclude Include="Code_300.h" />
     <ClInclude Include="Code_345.h" />
     <ClInclude Include="Code_375.h" />
     <ClInclude Include="Code_492.h" />
+    <ClInclude Include="Code_496.h" />
     <ClInclude Include="Code_516.h" />
     <ClInclude Include="Code_62.h" />
     <ClInclude Include="Code_66.h" />
+    <ClInclude Include="Code_682.h" />
     <ClInclude Include="Code_693.h" />
     <ClInclude Include="Code_747.h" />
     <ClInclude Include="Code_86.h" />
@@ -175,6 +183,8 @@
     <ClInclude Include="QuickSort.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BinarySearchTree.cpp" />
+    <ClCompile Include="Define.cpp" />
     <ClCompile Include="LetCode.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

@@ -7,7 +7,6 @@
 int partition(vector<int>& vec, int i, int j) 
 {
 	int xValue = vec[i], x = i;
-	bool flag = true;
 
 	while (i < j)
 	{
