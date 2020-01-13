@@ -105,6 +105,21 @@
     <ClInclude Include="BinarySearchTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Code_1038.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_784.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ByteAlign.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_1221.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AVLTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -117,6 +132,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Define.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="malloc.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AVLTree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

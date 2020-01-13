@@ -151,12 +151,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AVLTree.h" />
     <ClInclude Include="BinarySearchTree.h" />
+    <ClInclude Include="ByteAlign.h" />
     <ClInclude Include="Code_1.h" />
     <ClInclude Include="Code_101.h" />
     <ClInclude Include="Code_1021.h" />
+    <ClInclude Include="Code_1038.h" />
     <ClInclude Include="Code_1046.h" />
     <ClInclude Include="Code_1047.h" />
+    <ClInclude Include="Code_1221.h" />
     <ClInclude Include="Code_1222.h" />
     <ClInclude Include="Code_167.h" />
     <ClInclude Include="Code_2.h" />
@@ -174,6 +178,7 @@
     <ClInclude Include="Code_682.h" />
     <ClInclude Include="Code_693.h" />
     <ClInclude Include="Code_747.h" />
+    <ClInclude Include="Code_784.h" />
     <ClInclude Include="Code_86.h" />
     <ClInclude Include="Code_863.h" />
     <ClInclude Include="Code_921.h" />
@@ -183,9 +188,11 @@
     <ClInclude Include="QuickSort.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AVLTree.cpp" />
     <ClCompile Include="BinarySearchTree.cpp" />
     <ClCompile Include="Define.cpp" />
     <ClCompile Include="LetCode.cpp" />
+    <ClCompile Include="malloc.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
