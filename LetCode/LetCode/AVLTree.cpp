@@ -13,7 +13,9 @@ AVLTree::~AVLTree()
 
 bool AVLTree::Insert(int nValue, bool bRecursion = true)
 {
+	_Insert(&m_pRootNode, nValue, nullptr);
 
+	return true;
 }
 
 bool AVLTree::Delete(int nValue)
@@ -203,4 +205,86 @@ void AVLTree::L_Rotate(TreeNode* pRootNode)
 		pParentNode->left = pRightNode;
 	else
 		pParentNode->right = pRightNode;
+}
+
+bool AVLTree::_Insert(TreeNode** pNode, int nValue, TreeNode* pParentNode)
+{
+	if (!(TreeNode*)(*pNode))
+	{
+		(*pNode) = new TreeNode(nValue);
+		(*pNode)->parent = pParentNode;
+		return true;
+	}
+
+	if ((*pNode)->val == nValue)
+	{
+		return false;
+	}
+
+	if ((*pNode)->val > nValue)
+	{
+		if (_Insert(&((*pNode)->left), nValue, *pNode))
+		{
+			//左子树长高了
+			switch ((*pNode)->bf)
+			{
+				//原左子树高，需做左平衡处理
+			case TREE_LH:
+			{
+				(*pNode)->bf += 1;
+				LeftBalance(*pNode);
+				return false;
+			}
+			//原右子树高，更新当前节点平衡因子为登高
+			case TREE_RH:
+			{
+				(*pNode)->bf = TREE_EH;
+				return false;
+			}
+			//原等高,更新当前节点平衡因子为左高
+			case TREE_EH:
+			{
+				(*pNode)->bf = TREE_LH;
+				return true;
+			}
+			//按理说不应该走到这里
+			default:
+				return false;
+			}
+		}
+	}
+
+	if ((*pNode)->val < nValue)
+	{
+		if (_Insert(&((*pNode)->right), nValue, *pNode))
+		{
+			//右子树长高了
+			switch ((*pNode)->bf)
+			{
+				//原左子树高，更新当前节点平衡因子为登高
+			case TREE_LH:
+			{
+				(*pNode)->bf = TREE_EH;
+
+				return false;
+			}
+			//原右子树高，需做右平衡处理
+			case TREE_RH:
+			{
+				(*pNode)->bf -= 1;
+				RightBalance(*pNode);
+				return false;
+			}
+			//原等高,更新当前节点平衡因子为右高
+			case TREE_EH:
+			{
+				(*pNode)->bf = TREE_RH;
+				return true;
+			}
+			//按理说不应该走到这里
+			default:
+				return false;
+			}
+		}
+	}
 }

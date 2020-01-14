@@ -28,5 +28,7 @@ private:
 	//处理之后pRootNode的父节点指向pRootNode的右节点
 	//左旋操作(逆时针旋转) 对应RR型
 	void				L_Rotate(TreeNode* pRootNode);	
+
+	bool				_Insert(TreeNode** pNode, int nValue, TreeNode* pParentNode);
 };
 
