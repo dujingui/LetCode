@@ -35,6 +35,7 @@ struct TreeNode {
 
 ListNode* ConvertToListNode(vector<int>& vec);
 
+TreeNode* ConvertToBinarySearchTreeNode(vector<int>& vec);
 TreeNode* ConvertToTreeNode(vector<int>& vec, int i);
 
 void PrintVector(vector<int>& vec);

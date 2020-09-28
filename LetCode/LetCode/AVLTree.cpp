@@ -11,7 +11,7 @@ AVLTree::~AVLTree()
 {
 }
 
-bool AVLTree::Insert(int nValue, bool bRecursion = true)
+bool AVLTree::Insert(int nValue, bool bRecursion)
 {
 	_Insert(&m_pRootNode, nValue, nullptr);
 
@@ -20,7 +20,7 @@ bool AVLTree::Insert(int nValue, bool bRecursion = true)
 
 bool AVLTree::Delete(int nValue)
 {
-
+	return true;
 }
 
 void AVLTree::LeftBalance(TreeNode* pRootNode)

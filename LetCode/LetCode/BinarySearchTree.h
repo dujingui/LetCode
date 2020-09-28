@@ -14,6 +14,7 @@ public:
 	TreeNode*			MinNode();
 	TreeNode*			NextNode(TreeNode* pNode);
 	TreeNode*			LastNode(TreeNode* pNode);
+	TreeNode*			GetRootNode() { return m_pRootNode; }
 public:
 	virtual bool		Insert(int nValue, bool bRecursion = true);
 	virtual bool		Delete(int nValue);

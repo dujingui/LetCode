@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "Define.h"
+#include "BinarySearchTree.h"
 
 ListNode* ConvertToListNode(vector<int>& vec)
 {
@@ -17,6 +18,19 @@ ListNode* ConvertToListNode(vector<int>& vec)
 	delete pHead;
 
 	return pTemp;
+}
+
+TreeNode* ConvertToBinarySearchTreeNode(vector<int>& vec)
+{
+	if (vec.size() <= 0)return nullptr;
+
+	BinarySearchTree* pTree = new BinarySearchTree();
+	for (int i = 0; i < vec.size(); i++)
+	{
+		pTree->Insert(vec[i]);
+	}
+
+	return pTree->GetRootNode();
 }
 
 TreeNode* ConvertToTreeNode(vector<int>& vec, int i)

@@ -120,6 +120,12 @@
     <ClInclude Include="AVLTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Code_938.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Sort_Insert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">

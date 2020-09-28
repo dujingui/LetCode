@@ -182,10 +182,12 @@
     <ClInclude Include="Code_86.h" />
     <ClInclude Include="Code_863.h" />
     <ClInclude Include="Code_921.h" />
+    <ClInclude Include="Code_938.h" />
     <ClInclude Include="Define.h" />
     <ClInclude Include="LCP_Code_1.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="QuickSort.h" />
+    <ClInclude Include="Sort_Insert.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AVLTree.cpp" />
