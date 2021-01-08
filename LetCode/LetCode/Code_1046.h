@@ -72,3 +72,8 @@ int lastStoneWeight(vector<int>& stones) {
 	return stones.size() > 0 ? stones[0] : 0;
 }
 
+void test_1046()
+{
+	vector<int > vec = {2, 7, 4, 1, 8, 1};
+	lastStoneWeight(vec);
+}

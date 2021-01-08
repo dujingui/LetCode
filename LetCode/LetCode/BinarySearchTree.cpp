@@ -505,3 +505,24 @@ void BinarySearchTree::_Print(TreeNode* pRootNode)
 {
 	
 }
+
+void test_BinarySearchTree()
+{
+	BinarySearchTree* pTree = new BinarySearchTree();
+	pTree->Insert(50);
+	pTree->Insert(30);
+	pTree->Insert(20);
+	pTree->Insert(35);
+	pTree->Insert(34);
+	pTree->Insert(32);
+	pTree->Insert(40);
+	pTree->Insert(80);
+	pTree->Insert(70);
+	pTree->Insert(100);
+	pTree->Insert(75);
+
+	pTree->PostOrder(false);
+	pTree->PostOrder(true);
+
+	pTree->Delete(30);
+}

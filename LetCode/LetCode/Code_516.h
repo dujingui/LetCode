@@ -2,7 +2,7 @@
 
 #include "Define.h"
 
-//516. 最长回文子序列
+//516. 最长回文子序列 ?
 //给定一个字符串s，找到其中最长的回文子序列。可以假设s的最大长度为1000。
 //
 //示例 1:
@@ -28,19 +28,54 @@
 //著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
 int longestPalindromeSubseq(string s) {
-	int i = 0, j = s.length() - 1;
+	int maxLen = 0;
+	vector<char> lv;
+	vector<char> rv;
 
-	//while (true) {
-	//	if (i >= j)
-	//	{
-	//		break;
-	//	}
+	vector<char> tlv;
+	vector<char> trv;
 
-	//	if([])
-	//}
+	for (int i = 0; i < s.length() - 1; i++)
+	{
+		int len = 0;
+		for (int l = i; l < s.length() - 1; l++)
+		{
+			for (int r = s.length() - 1; r > l; r--)
+			{
+				if (s[l] == s[r])
+				{
+					r--;
+					len += 2;
+					tlv.push_back(s[l]);
+					trv[0] = s[r];
+					break;
+				}
+			}
+		}
+
+		if (len > maxLen)
+		{
+			lv = tlv;
+			rv = trv;
+			maxLen = len;
+		}
+	}
+
+	for (int i = 0; i < lv.size(); i++)
+	{
+		std::cout << lv[i];
+	}
+
+	return 0;
 }
 
+void test_516()
+{
+	std::vector<int> vec = { 1,2,3,6,2,3,4,7,8 };
 
+	string str = "bbbab";
+	std::cout << longestPalindromeSubseq(str) << endl;
+}
 
 
 

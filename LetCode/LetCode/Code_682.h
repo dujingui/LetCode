@@ -81,3 +81,11 @@ int calPoints(vector<string>& ops) {
 
 	return sum;
 }
+
+void test_682()
+{
+	//vector<int> vec = { 4,1,6,0,2,5,7,TREE_NODE_NULL,TREE_NODE_NULL,TREE_NODE_NULL,3,TREE_NODE_NULL,TREE_NODE_NULL,TREE_NODE_NULL,8 };
+	//TreeNode* pNode = ConvertToTreeNode(vec, 0);
+	//TreeNode* pNode1 = bstToGst(pNode);
+	//std::cout << calPoints(vec);
+}

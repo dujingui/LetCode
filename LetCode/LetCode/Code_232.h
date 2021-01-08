@@ -96,3 +96,13 @@ public:
  * int param_3 = obj->peek();
  * bool param_4 = obj->empty();
  */
+
+void test_232()
+{
+	MyQueue* obj = new MyQueue();
+	obj->push(1);
+	obj->push(2);
+	int param_2 = obj->pop();
+	int param_3 = obj->peek();
+	bool param_4 = obj->empty();
+}

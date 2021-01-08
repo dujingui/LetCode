@@ -80,3 +80,10 @@ bool isSymmetric(TreeNode* root) {
 	}
 	return true;
 }
+
+void test_101()
+{
+	std::vector<int> vec = { 1,2,2,NULL,3,3,NULL, NULL, NULL,4,5,5,4 };
+	TreeNode* root = ConvertToTreeNode(vec, 0);
+	cout << isSymmetric(root) << endl;
+}

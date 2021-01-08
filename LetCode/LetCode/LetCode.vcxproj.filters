@@ -126,6 +126,18 @@
     <ClInclude Include="Sort_Insert.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Code_34.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_846_1296.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_1603.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Code_355.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">

@@ -51,3 +51,8 @@ private:
 protected:
 	TreeNode*	m_pRootNode;
 };
+
+#ifndef NINARYSEARCHTREE
+#define NINARYSEARCHTREE
+void test_BinarySearchTree();
+#endif

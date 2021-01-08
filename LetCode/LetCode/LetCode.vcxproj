@@ -162,13 +162,16 @@
     <ClInclude Include="Code_1047.h" />
     <ClInclude Include="Code_1221.h" />
     <ClInclude Include="Code_1222.h" />
+    <ClInclude Include="Code_1603.h" />
     <ClInclude Include="Code_167.h" />
     <ClInclude Include="Code_2.h" />
     <ClInclude Include="Code_232.h" />
     <ClInclude Include="Code_274.h" />
     <ClInclude Include="Code_3.h" />
     <ClInclude Include="Code_300.h" />
+    <ClInclude Include="Code_34.h" />
     <ClInclude Include="Code_345.h" />
+    <ClInclude Include="Code_355.h" />
     <ClInclude Include="Code_375.h" />
     <ClInclude Include="Code_492.h" />
     <ClInclude Include="Code_496.h" />
@@ -179,6 +182,7 @@
     <ClInclude Include="Code_693.h" />
     <ClInclude Include="Code_747.h" />
     <ClInclude Include="Code_784.h" />
+    <ClInclude Include="Code_846_1296.h" />
     <ClInclude Include="Code_86.h" />
     <ClInclude Include="Code_863.h" />
     <ClInclude Include="Code_921.h" />

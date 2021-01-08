@@ -88,3 +88,10 @@ vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
 
 	return ret;
 }
+
+void test_496()
+{
+	std::vector<int> num1 = { 4,1,2 };
+	std::vector<int> num2 = { 1,3,4,2 };
+	std::vector<int> ret = nextGreaterElement(num1, num2);
+}

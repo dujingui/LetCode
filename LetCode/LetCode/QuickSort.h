@@ -72,3 +72,10 @@ void QuickSort(vector<int>& vec)
 		}
 	}
 }
+
+void test_QuickSort()
+{
+	//std::vector<int> vec = { 2,3,1,5,4};
+	std::vector<int> vec = { 2,3,1,5,4,2,3,64,2,64,16,4,6,64,6,4,42,64,6,46,345,4,3,43,4,6,6,34,46,4,6,46,4,36,6,6,346,34,6,346,3,4,346,34,6,4,6,34,634,6,3};
+	QuickSort(vec);
+}
