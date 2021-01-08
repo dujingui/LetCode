@@ -68,18 +68,19 @@ public:
 	}
 
 	void follow(int followeeID) {
-		m_FolloweeVec.push_back(followeeID);
+		if (followeeID == m_nUserID)return;
+
+		m_FolloweeSet.insert(followeeID);
 	}
 
 	void unfollow(int followeeID) {
-		for (int i = 0; i < m_FolloweeVec.size(); i++)
+		auto iter = m_FolloweeSet.find(followeeID);
+		if (iter == m_FolloweeSet.end())
 		{
-			if (m_FolloweeVec[i] == followeeID)
-			{
-				m_FolloweeVec.erase(m_FolloweeVec.begin() + i);
-				break;
-			}
+			return;
 		}
+
+		m_FolloweeSet.erase(iter);
 	}
 
 	vector<CTweet*> getNewsFeed(int num) {
@@ -98,18 +99,17 @@ public:
 		return ret;
 	}
 
-	vector<int>& getFolloweeVec()
+	unordered_set<int>& getFolloweeVec()
 	{
-		return m_FolloweeVec;
+		return m_FolloweeSet;
 	}
 private:
 	int m_nUserID;
 	//推文列表
 	vector<CTweet*> m_TweetVec;
 	//关注的人的列表
-	vector<int> m_FolloweeVec;
+	unordered_set<int> m_FolloweeSet;
 };
-
 
 
 class Twitter 
@@ -156,10 +156,10 @@ public:
 
 		vector<CTweet*> newsfeedVec = pUser->getNewsFeed(num);
 
-		vector<int>& followeeVec = pUser->getFolloweeVec();
-		for (int i = 0; i < followeeVec.size(); i++)
+		unordered_set<int>& followeeVec = pUser->getFolloweeVec();
+		for (auto iter1 = followeeVec.begin(); iter1 != followeeVec.end(); iter1++)
 		{
-			auto iter2 = m_UserMap.find(followeeVec[i]);
+			auto iter2 = m_UserMap.find(*iter1);
 			if (iter2 == m_UserMap.end())
 			{
 				continue;
@@ -189,6 +189,11 @@ public:
 		auto iter = m_UserMap.find(followerId);
 		if (iter == m_UserMap.end())
 		{
+			auto user = new CUser(followerId);
+			m_UserMap.insert(make_pair(followerId, user));
+
+			user->follow(followeeId);
+
 			return;
 		}
 
@@ -236,4 +241,29 @@ void test_355() {
 	// 因为用户1已经不再关注用户2.
 	twitter.getNewsFeed(1);
 
+}
+
+void test_355_2()
+{
+	//["Twitter", "postTweet", "follow", "getNewsFeed"]
+	//[[], [1, 5], [1, 1], [1]]
+
+	Twitter twitter;
+	twitter.postTweet(1, 5);
+	twitter.follow(1, 1);
+	twitter.getNewsFeed(1);
+}
+
+void test_355_3()
+{
+	//["Twitter", "postTweet", "getNewsFeed", "follow", "getNewsFeed", "unfollow", "getNewsFeed"]
+	//[[], [1, 1], [1], [2, 1], [2], [2, 1], [2]]
+
+	Twitter twitter;
+	twitter.postTweet(1, 1);
+	twitter.getNewsFeed(1);
+	twitter.follow(2, 1);
+	twitter.getNewsFeed(2);
+	twitter.unfollow(2, 1);
+	twitter.getNewsFeed(2);
 }

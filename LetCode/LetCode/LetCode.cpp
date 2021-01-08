@@ -50,7 +50,8 @@ int main()
 	//test_32();
 	//test_516();
 
-	test_355();
+	//test_355();
+	test_355_2();
 
 	return 1;
 }
