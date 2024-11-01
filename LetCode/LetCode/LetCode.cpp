@@ -9,6 +9,7 @@
 #include "ByteAlign.h"
 #include "Sort_Insert.h"
 #include "Code_34.h"
+#include "Code_37.h"
 #include "Code_62.h"
 #include "Code_86.h"
 #include "Code_101.h"
@@ -51,7 +52,9 @@ int main()
 	//test_516();
 
 	//test_355();
-	test_355_2();
+	//test_355_2();
+
+	test_37();
 
 	return 1;
 }

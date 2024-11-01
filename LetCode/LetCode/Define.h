@@ -41,3 +41,4 @@ TreeNode* ConvertToBinarySearchTreeNode(vector<int>& vec);
 TreeNode* ConvertToTreeNode(vector<int>& vec, int i);
 
 void PrintVector(vector<int>& vec);
+void PrintVector(vector<vector<char>>& vec);
